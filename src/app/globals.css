@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+:root {
+  --light: #fff;
+  --dark: #000;
+  --background: #f7f7f7;
+  --foreground: #111111;
+  --inputColor: #cfcfcf;
+  --btnColor: #ff8555;
+  --sideBarColor: #212121;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --light: #fff;
+    --dark: #000;
+    --background: #111111;
+    --foreground: #f7f7f7;
+    --btnColor: #ff8555;
+    --sideBarColor: #212121;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.sidebar {
+  transform: translateX(-100%);
+}
+
+.card {
+  background-color: var(--light);
+  padding: 1.5rem;
+  border-radius: 0.3rem;
+  border: 1px solid #F9F9F9;
+}
+
+input {
+  border-color: var(--inputColor);
+
+  &:focus {
+    background-color: #ff9f7915;
+    outline: none;
+    color: var(--foreground) !important;
+    border-color: var(--btnColor) !important;
+  }
+}
+
+.cusBtn {
+  background-color: var(--btnColor) !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.03rem;
+  cursor: pointer;
+}
+
+.loginWrapper {
+  max-width: 325px;
+}
+
+.anchorColor {
+  color: var(--btnColor) !important;
+}
+
+.sidebarBtn {
+  border-radius: .2rem;
+  color: var(--background);
+  font-weight: 500;
+  cursor: pointer;
+  padding-block: 1rem;
+
+  &:hover {
+    background: #383838;
+  }
+
+  &.active {
+    background: #383838;
+  }
+}
+
+.cardBg1 {
+  background-color: #b3eec0 !important;
+  border-color: #b3eec0 !important;
+}
+
+.cardBg2 {
+  background-color: #F4D9CC !important;
+  border-color: #F4D9CC !important;
+}
+
+.cardBg3 {
+  background-color: #DAE1F1 !important;
+  border-color: #DAE1F1 !important;
+}
+
+.cardBg4 {
+  background-color: #e9eeb3 !important;
+  border-color: #e9eeb3 !important;
+}
