@@ -61,7 +61,7 @@ const Sidebar = ({
           </li>
           <li className="sidebarBtn">
             <SidebarDropdown
-              icon={<MdOutlineSettings className="h-[1.2em] w-[1.2em]" />}
+              icon={<MdOutlineSettings className="h-[1.2em] w-[1.2  em]" />}
               title="Settings"
               items={[
                 {
