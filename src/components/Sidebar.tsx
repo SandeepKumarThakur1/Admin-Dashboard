@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { Home, X } from "lucide-react";
 import SidebarDropdown from "./ui/SidebarDropdown";
-import { FaRegUser, FaUsers } from "react-icons/fa";
+import { FaRegUser, FaUsers, FaUserTie } from "react-icons/fa";
 import { MdAdminPanelSettings, MdOutlineSecurity, MdOutlineSettings } from "react-icons/md";
 import { IoMdSettings } from "react-icons/io";
 import { IoSettingsSharp } from "react-icons/io5";
@@ -76,6 +76,14 @@ const Sidebar = ({
                 },
               ]}
             />
+          </li>
+          <li className="sidebarBtn">
+            <Link
+              href="/user"
+              className="flex items-center gap-2 px-4 text-white"
+            >
+             <FaUserTie />User
+            </Link>
           </li>
         </ul>
       </nav>
